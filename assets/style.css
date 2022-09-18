@@ -13,6 +13,7 @@ body {
     height:30rem;
     max-width: 100%;
     position: relative;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -82,13 +83,27 @@ nav ul {
 
 ul li {
     font-size: 1.5rem;
-    padding: 2rem 3rem 1rem ;
+    padding: .5rem 1em ;
     margin: 0 2rem;
 }
-
-.btn::hover
-{
-background-color: whitesmoke;
+nav a {
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    text-decoration: none;
+    color: black;
+ }
+.myBtnNav {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.myBtnNav:hover {
+background-color: rgb(241,233,210);
+border-radius: 25px;
+text-decoration: none;
+color: black;
 }
 
 main {
@@ -164,20 +179,24 @@ footer h3 {
 /*acordeon*/
 .myAccordion {
     background-color:rgb(161,161,137);
-    color:rgb(241,233,210) ;
+    color:rgb(241,233,210);
+    font-family: 'Poppins', sans-serif;
 }
 .myAccordion:not(.collapsed) {
     background-color: rgb(241,233,210);
     color: rgb(161,161,137) ;
-    border-color: #BABC94;
+    border-color:rgb(161,161,137);
     box-shadow:rgb(161,161,137);
     }
-.accordion-botton:focus {
+.myAccordion-botton:not(.collapsed) {
     border-color: rgb(161,161,137) ;
-    box-shadow: rgb(159,164,123);
 }
 
-/* .myAccordion-body {
-
+.myAccordion:not(.collapsed){
+    border-color:#BABC94 ;
+    box-shadow: none;
 }
- */
+.myAccordion-button:focus {
+    border-color: rgb(159,164,123) ;
+    box-shadow:none;
+}
