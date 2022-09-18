@@ -4,33 +4,32 @@
 }
 body {
     margin: 0;
-    height: 80vh;
     background-image: url(./images/parallax.JPG);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size:  cover;
-    height:30rem;
-    max-width: 100%;
     position: relative;
     font-family: 'Poppins', sans-serif;
+    width: 100%;
 }
 
 header {
     background-color: rgb(159,164,123);
     margin: 0;
+    padding: 0;
     display: grid;
     grid-template-areas:
         "logo  lasBandurrias"
         "logo  cabañaPatagonica"
         "logo  navBar";
     grid-template-columns: 20% 80%;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     border-bottom: 0.1rem solid rgb(229,223,207);
     font-family: 'IM Fell DW Pica SC', serif;
 }
 
-.nombreCabañas {
+.nombreCabanas {
     font-family: "Bohemian Typewriter";
     font-size: 4.5rem;
     letter-spacing: 0.2em;
@@ -42,7 +41,7 @@ header {
     align-items: flex-end;
 }
 
-.cabañaPatagonica {
+.cabanaPatagonica {
     font-family: "Bohemian Typewriter";
     font-size: 1.5rem;
     letter-spacing: 0.3em;
@@ -60,7 +59,7 @@ header {
     padding: 1rem;
     padding-left: 3rem ;
 }
-.navBar {
+.myNavBar {
     grid-area: navBar;
 }
 nav {
@@ -93,21 +92,21 @@ nav a {
 nav a:hover{
     text-decoration: none;
     color: black;
- }
+}
 .myBtnNav {
     display: flex;
     align-items: center;
     justify-items: center;
 }
 .myBtnNav:hover {
-background-color: rgb(241,233,210);
-border-radius: 25px;
-text-decoration: none;
-color: black;
+    background-color: rgb(241,233,210);
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
 }
-
+/* main */
 main {
-    height: 100vh ;
+    height: 80vh ;
 }
 
 .placaFondo {
@@ -136,6 +135,10 @@ main {
     font-family: 'IM Fell DW Pica SC', serif;
     font-size: 2rem;
     letter-spacing: 0.3em;
+}
+.fotoCabana {
+    width: 50rem;
+    
 }
 
 /* footer */
@@ -212,11 +215,15 @@ footer h3 {
 }
 
 @media screen and (max-width: 576px) {
+    body {
+        width: 100vw;
+    }
     header {
         grid-template-areas:
-            "logo  lasBandurrias"
-            "logo cabanaPatagonicaa"
+            "logo lasBandurrias"
+            "logo cabañaPatagonica"
             "navBar navBar";
+        width: 100%;
         font-size: 3rem;
         letter-spacing: .1em;
         text-align: end;
@@ -225,9 +232,25 @@ footer h3 {
         height: 9rem;
     }
     .nombreCabanas {
-        font-size: 1rem;
+        font-size: 2rem;
     }
-    .myBtnNav li {
-        font-size: 5pt;
+    ul li{
+        font-size: 1rem;
+        margin: 1rem;
+        padding: 0.5rem
+    }
+    .myBtnNav:hover {
+        background-color: rgb(159,164,123);
+        border-radius: 25px;
+        text-decoration: none;
+        color: black;}
+
+    .presentacion h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .presentacion h2 {
+        font-size: 1rem;
     }
 }
