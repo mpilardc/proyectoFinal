@@ -200,3 +200,7 @@ footer h3 {
     border-color: rgb(159,164,123) ;
     box-shadow:none;
 }
+
+@media (max-width) {
+    
+}
