@@ -202,7 +202,7 @@ footer h3 {
 }
 
 @media screen and (max-width: 768px) {
-    header: {
+    header {
         grid-template-areas:
             "logo  lasBandurrias";
         font-size: 3rem;
@@ -212,7 +212,7 @@ footer h3 {
 }
 
 @media screen and (max-width: 576px) {
-    header: {
+    header {
         grid-template-areas:
             "logo  lasBandurrias"
             "logo cabanaPatagonicaa"
@@ -230,3 +230,4 @@ footer h3 {
     .myBtnNav li {
         font-size: 5pt;
     }
+}
