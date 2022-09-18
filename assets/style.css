@@ -201,23 +201,22 @@ footer h3 {
     box-shadow:none;
 }
 
-@media only screen (max-width: 768px) {
+@media screen and (max-width: 768px) {
     header: {
         grid-template-areas:
-            "logo  lasBandurrias"
+            "logo  lasBandurrias";
         font-size: 3rem;
         letter-spacing: .1em;
         text-align: end;
     }
-
 }
 
-@media only screen (max-width: 576px) {
+@media screen and (max-width: 576px) {
     header: {
         grid-template-areas:
             "logo  lasBandurrias"
             "logo cabanaPatagonicaa"
-            "navBar navBar"
+            "navBar navBar";
         font-size: 3rem;
         letter-spacing: .1em;
         text-align: end;
