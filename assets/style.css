@@ -11,7 +11,6 @@ body {
     background-size:  cover;
     position: relative;
     font-family: 'Poppins', sans-serif;
-    width: 100%;
 }
 
 header {
@@ -22,9 +21,8 @@ header {
     grid-template-areas:
         "logo  lasBandurrias"
         "logo  cabañaPatagonica"
-        "logo  navBar";
+        "navBar  navBar";
     grid-template-columns: 20% 80%;
-    grid-template-rows: 1fr;
     border-bottom: 0.1rem solid rgb(229,223,207);
     font-family: 'IM Fell DW Pica SC', serif;
 }
@@ -38,7 +36,7 @@ header {
     margin: 1rem 0 0 0;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .cabanaPatagonica {
@@ -55,9 +53,8 @@ header {
 
 .logo {
     grid-area: logo;
-    height: 15rem;
+    height: 13rem;
     padding: 1rem;
-    padding-left: 3rem ;
 }
 .myNavBar {
     grid-area: navBar;
@@ -78,16 +75,21 @@ nav ul {
     padding: 0;
     align-items: stretch;
 }
-
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 ul li {
     font-size: 1.5rem;
     padding: .5rem 1em ;
-    margin: 0 2rem;
+    margin: .5rem 3rem;
 }
 nav a {
     text-decoration: none;
     color: black;
+    margin-bottom: ;
 }
 nav a:hover{
     text-decoration: none;
@@ -97,17 +99,18 @@ nav a:hover{
     display: flex;
     align-items: center;
     justify-items: center;
+    border-radius: 25px;
+    transition-property: background;
+    transition-duration: 500ms;
 }
 .myBtnNav:hover {
     background-color: rgb(241,233,210);
-    border-radius: 25px;
+
     text-decoration: none;
     color: black;
 }
 /* main */
-main {
-    height: 80vh ;
-}
+
 
 .placaFondo {
     background-color: rgb(229,223,207,.5);
@@ -205,18 +208,50 @@ footer h3 {
 }
 
 @media screen and (max-width: 768px) {
+    *body {
+        width: 100%;}
     header {
-        grid-template-areas:
-            "logo  lasBandurrias";
         font-size: 3rem;
         letter-spacing: .1em;
         text-align: end;
+    }
+    .logo {
+        height: 9rem;
+    }
+    .nombreCabanas {
+        font-size: 2rem;
+    }
+    ul li{
+        font-size: 1rem;
+        margin: 1rem;
+        padding: 0.5rem
+    }
+    .myBtnNav:hover {
+        background-color: rgb(159,164,123);
+        border-radius: 25px;
+        text-decoration: none;
+        color: black;}
+
+    .presentacion h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .presentacion h2 {
+        font-size: 1rem;
+    }
+    .fotoCabana {
+        width: 25rem;
+        margin: 1rem;
     }
 }
 
 @media screen and (max-width: 576px) {
     body {
         width: 100vw;
+    }
+    .fotoCabana {
+        width: 50rem;
     }
     header {
         grid-template-areas:
