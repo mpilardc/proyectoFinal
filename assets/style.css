@@ -328,7 +328,7 @@ media queries - CELULAR
         margin: 1rem;
         padding: 0.5rem;
         flex-wrap: wrap;
-        justify-content: center1;
+        justify-content: center;
     }
 
     .myBtnNav:hover {
