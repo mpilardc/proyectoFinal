@@ -186,7 +186,7 @@ HOME - MAIN
 }
 .fotoCabana {
     width: 50rem;
-    
+    margin: 2rem;
 }
 
 
@@ -303,6 +303,7 @@ media queries - CELULAR
     }
     .fotoCabana {
         width: 27rem;
+        margin: 1rem;
     }
     header {
         grid-template-areas:
