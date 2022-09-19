@@ -246,7 +246,9 @@ media queries - TABLET
     ul li{
         font-size: 1rem;
         margin: 1rem;
-        padding: 0.5rem
+        padding: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .myBtnNav:hover {
         background-color: rgb(159,164,123);
@@ -324,8 +326,11 @@ media queries - CELULAR
     ul li{
         font-size: 1rem;
         margin: 1rem;
-        padding: 0.5rem
+        padding: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center1;
     }
+
     .myBtnNav:hover {
         background-color: rgb(159,164,123);
         border-radius: 25px;
