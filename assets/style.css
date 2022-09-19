@@ -1,3 +1,6 @@
+/*
+general 
+*/
 @font-face {
     font-family: "Bohemian Typewriter";
     src: url(./fonts/Bohemian/Typewriter.ttf);
@@ -11,6 +14,7 @@ body {
     background-size:  cover;
     position: relative;
     font-family: 'Poppins', sans-serif;
+    color: black;
 }
 
 header {
@@ -105,46 +109,13 @@ nav a:hover{
 }
 .myBtnNav:hover {
     background-color: rgb(241,233,210);
-
     text-decoration: none;
     color: black;
 }
-/* main */
 
-
-.placaFondo {
-    background-color: rgb(229,223,207,.5);
-    margin: 3%;
-    padding: 1rem;
-
-}
-.presentacion {
-    background-color: rgb(241,233,210);
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.presentacion h1 {
-    font-family: 'IM Fell DW Pica SC', serif;
-    font-size: 4rem;
-    letter-spacing: 0.3em;
-    margin: 1rem 0 0;
-}
-
-.presentacion h2 {
-    font-family: 'IM Fell DW Pica SC', serif;
-    font-size: 2rem;
-    letter-spacing: 0.3em;
-}
-.fotoCabana {
-    width: 50rem;
-    
-}
-
-/* footer */
+/* 
+FOOTER 
+*/
 .footer {
     background-color: rgb(159,164,123);
     border-top: 0.1rem solid rgb(229,223,207);
@@ -182,7 +153,47 @@ footer h3 {
     letter-spacing: 0.3em;
 }
 
-/*acordeon*/
+
+/* 
+HOME - MAIN 
+*/
+.placaFondo {
+    background-color: rgb(229,223,207,.5);
+    margin: 3%;
+    padding: 1rem;
+
+}
+.presentacion {
+    background-color: rgb(241,233,210);
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion h1 {
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-size: 4rem;
+    letter-spacing: 0.3em;
+    margin: 1rem 0 0;
+}
+
+.presentacion h2 {
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-size: 2rem;
+    letter-spacing: 0.3em;
+}
+.fotoCabana {
+    width: 50rem;
+    
+}
+
+
+/*
+FAQ - acordeon
+*/
+
 .myAccordion {
     background-color:rgb(161,161,137);
     color:rgb(241,233,210);
@@ -207,6 +218,17 @@ footer h3 {
     box-shadow:none;
 }
 
+/* MAIN TURISMO */
+
+.lugares{
+    background-color:rgb(241,233,210);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* 
+media queries - TABLET 
+*/
 @media screen and (max-width: 768px) {
     *body {
         width: 100%;}
@@ -246,12 +268,16 @@ footer h3 {
     }
 }
 
+/* 
+media queries - CELULAR
+ */
+
 @media screen and (max-width: 576px) {
     body {
         width: 100vw;
     }
     .fotoCabana {
-        width: 50rem;
+        width: 27rem;
     }
     header {
         grid-template-areas:
