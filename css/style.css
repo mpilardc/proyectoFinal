@@ -1,50 +1,47 @@
-/*
-general 
-*/
-@font-face {
-    font-family: "Bohemian Typewriter";
-    src: url(./fonts/Bohemian/Typewriter.ttf);
-}
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&family=IM+Fell+Double+Pica+SC&family=Poppins:wght@300&family=Quicksand&display=swap");
 body {
-    margin: 0;
-    background-image: url(./images/parallax.JPG);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:  cover;
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-    color: black;
-}
+  background-image: url(../assets/Images/parallax.JPG);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+@font-face {
+  font-family: "Bohemian Typewriter";
+  src: url(../assets/fonts/Bohemian_Typewriter.ttf); }
+
+header .nombreCabanas, header .cabanaPatagonica {
+  font-family: "Bohemian Typewriter";
+  color: black;
+  font-size: 4.5rem; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: black; }
+
+header .myNavBar {
+  font-family: 'IM Fell DW Pica SC', serif;
+  color: black; }
 
 header {
-    background-color: rgb(159,164,123);
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-areas:
-        "logo  lasBandurrias"
-        "logo  cabañaPatagonica"
-        "navBar  navBar";
-    grid-template-columns: 20% 80%;
-    border-bottom: 0.1rem solid rgb(229,223,207);
-    font-family: 'IM Fell DW Pica SC', serif;
-}
-
-.nombreCabanas {
-    font-family: "Bohemian Typewriter";
-    font-size: 4.5rem;
+  background-color: #9fa47b;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-areas: "logo  lasBandurrias" "logo  cabañaPatagonica" "navBar  navBar";
+  grid-template-columns: 20% 80%;
+  border-bottom: 0.1rem solid #e5dfcf; }
+  header .nombreCabanas {
     letter-spacing: 0.2em;
     text-align: end;
     grid-area: lasBandurrias;
     margin: 1rem 0 0 0;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-start;
-}
-
-.cabanaPatagonica {
-    font-family: "Bohemian Typewriter";
+    align-items: flex-start; }
+  header .cabanaPatagonica {
     font-size: 1.5rem;
     letter-spacing: 0.3em;
     text-align: end;
@@ -52,327 +49,170 @@ header {
     justify-content: flex-end;
     align-items: flex-start;
     grid-area: cabañaPatagonica;
-    margin: 0 1rem;
-}
-
-.logo {
+    margin: 0 1rem; }
+  header .logo {
     grid-area: logo;
     height: 13rem;
-    padding: 1rem;
-}
-.myNavBar {
+    padding: 1rem; }
+  header .myNavBar {
     grid-area: navBar;
-}
-nav {
     display: flex;
     align-items: baseline;
     align-content: space-between;
-    justify-content: center;
-}
-nav ul {
-    text-align: center;
+    justify-content: center; }
+  header nav ul {
     display: flex;
-    flex-direction:row;
-    list-style-type: none;
-    text-align: center;
+    flex-direction: row;
     margin: 0;
     padding: 0;
-    align-items: stretch;
-}
-ul {
+    align-items: stretch; }
+  header ul {
+    text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-ul li {
+    list-style-type: none;
+    text-align: center; }
+  header li {
     font-size: 1.5rem;
-    padding: .5rem 1em ;
-    margin: .5rem 3rem;
-}
-nav a {
+    padding: .5rem 1em;
+    margin: .5rem 3rem; }
+  header a {
     text-decoration: none;
-    color: black;
-}
-nav a:hover{
+    color: black; }
+  header nav a:hover {
     text-decoration: none;
-    color: black;
-}
-.myBtnNav {
+    color: black; }
+  header .myBtnNav {
     display: flex;
     align-items: center;
-    justify-items: center;
-    border-radius: 25px;
-    transition-property: background;
-    transition-duration: 500ms;
-}
-.myBtnNav:hover {
-    background-color: rgb(241,233,210);
-    text-decoration: none;
-    color: black;
-}
+    justify-items: center; }
+    header .myBtnNav:hover {
+      border-radius: 25px;
+      transition-property: background;
+      transition-duration: 500ms;
+      background-color: #f1e9d2;
+      text-decoration: none;
+      color: black; }
 
-/* 
-FOOTER 
-*/
-.footer {
-    background-color: rgb(159,164,123);
-    border-top: 0.1rem solid rgb(229,223,207);
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 1rem;
-}
-
-.adress {
-    width: 33%;
-}
-
-.contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 33%;
-    justify-content: end;
-    padding: 0 0.1rem;
-    margin: 0;
-}
-
-footer p {
-    padding: .1rem;
-    justify-content: end;
-    margin: 0 1rem;
-}
-
-footer h3 {
-    margin: 1rem 1rem .5rem 1rem;
-    padding: .1rem;
-    font-family: 'IM Fell DW Pica SC', serif;
-    font-size: 1.5rem;
-    letter-spacing: 0.3em;
-}
-
-
-/* 
-HOME - MAIN 
-*/
 .placaFondo {
-    background-color: rgb(229,223,207,.5);
-    margin: 3%;
-    padding: 1rem;
+  background-color: rgba(229, 223, 207, 0.7);
+  margin: 3%;
+  padding: 1rem; }
 
-}
 .presentacion {
-    background-color: rgb(241,233,210);
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+  background-color: #f1e9d2;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .presentacion h1 {
-    font-family: 'IM Fell DW Pica SC', serif;
-    font-size: 4rem;
-    letter-spacing: 0.3em;
-    margin: 1rem 0 0;
-}
+  font-family: 'IM Fell DW Pica SC', serif;
+  font-size: 4rem;
+  letter-spacing: 0.3em;
+  margin: 1rem 0 0; }
 
 .presentacion h2 {
-    font-family: 'IM Fell DW Pica SC', serif;
-    font-size: 2rem;
-    letter-spacing: 0.3em;
-}
+  font-family: 'IM Fell DW Pica SC', serif;
+  font-size: 2rem;
+  letter-spacing: 0.3em; }
+
 .fotoCabana {
-    width: 50rem;
-    margin: 2rem;
-}
+  width: 50rem;
+  margin: 2rem; }
 
+.footer {
+  background-color: #9fa47b;
+  border-top: 0.1rem solid #e5dfcf;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem; }
 
-/*
-FAQ - acordeon
-*/
+.adress {
+  width: 33%; }
 
-.myAccordion {
-    background-color:rgb(161,161,137);
-    color:rgb(241,233,210);
-    font-family: 'Poppins', sans-serif;
-}
-.myAccordion:not(.collapsed) {
-    background-color: rgb(241,233,210);
-    color: rgb(161,161,137) ;
-    border-color:rgb(161,161,137);
-    box-shadow:rgb(161,161,137);
-    }
-.myAccordion-botton:not(.collapsed) {
-    border-color: rgb(161,161,137) ;
-}
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 33%;
+  justify-content: end;
+  padding: 0 0.1rem;
+  margin: 0; }
 
-.myAccordion:not(.collapsed){
-    border-color:#BABC94 ;
-    box-shadow: none;
-}
-.myAccordion-button:focus {
-    border-color: rgb(159,164,123) ;
-    box-shadow:none;
-}
+footer p {
+  padding: .1rem;
+  justify-content: end;
+  margin: 0 1rem; }
 
-/* MAIN TURISMO */
+footer h3 {
+  margin: 1rem 1rem .5rem 1rem;
+  padding: .1rem;
+  font-family: 'IM Fell DW Pica SC', serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.3em; }
 
-.lugares{
-    background-color:rgb(241,233,210);
-    padding: 1rem;
-    margin: 1rem 0;
-}
-
-/* 
-media queries - TABLET 
-*/
-@media screen and (max-width: 768px) {
-    *body {
-        width: 100%;}
-    header {
-        font-size: 3rem;
-        letter-spacing: .1em;
-        text-align: end;
-    }
-    .logo {
-        height: 9rem;
-    }
-    .nombreCabanas {
-        font-size: 2rem;
-    }
-    ul li{
-        font-size: 1rem;
-        margin: 1rem;
-        padding: 0.5rem;
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .myBtnNav:hover {
-        background-color: rgb(159,164,123);
-        border-radius: 25px;
-        text-decoration: none;
-        color: black;}
-
-    .presentacion h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .presentacion h2 {
-        font-size: 1rem;
-    }
-    .fotoCabana {
-        width: 25rem;
-        margin: 1rem;
-    }
-    .footer {
-        background-color: rgb(159,164,123);
-        border-top: 0.1rem solid rgb(229,223,207);
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
-        justify-content:center;
-    }
-
-    .footer h3 {
-        text-align: center;
-    }
-
-    .footer p {
-        text-align: center;
-    }
-    .adress {
-        width: 100%;
-    }
-    .contacto{ 
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
-    }
-}
-
-/* 
-media queries - CELULAR
- */
+.lugares {
+  background-color: #f1e9d2;
+  padding: 1rem;
+  margin: 1rem 0; }
 
 @media screen and (max-width: 576px) {
-    body {
-        width: 100vw;
-    }
-    .fotoCabana {
-        width: 10rem;
-        margin: 1rem;
-    }
-    header {
-        grid-template-areas:
-            "logo lasBandurrias"
-            "logo cabañaPatagonica"
-            "navBar navBar";
-        width: 100%;
-        font-size: 3rem;
-        letter-spacing: .1em;
-        text-align: end;
-    }
-    .logo {
-        height: 9rem;
-    }
-    .nombreCabanas {
-        font-size: 2rem;
-    }
-    ul li{
-        font-size: 1rem;
-        margin: 1rem;
-        padding: 0.5rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .myBtnNav:hover {
-        background-color: rgb(159,164,123);
-        border-radius: 25px;
-        text-decoration: none;
-        color: black;}
-
-    .presentacion h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .presentacion h2 {
-        font-size: 1rem;
-    }
-
-    .footer {
-        background-color: rgb(159,164,123);
-        border-top: 0.1rem solid rgb(229,223,207);
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
-        justify-content:center;
-    }
-
-    .footer h3 {
-        text-align: center;
-    }
-
-    .footer p {
-        text-align: center;
-    }
-    .adress {
-        width: 100%;
-    }
-    .contacto{ 
+  body {
+    width: 100vw; }
+  .fotoCabana {
+    width: 10rem;
+    margin: 1rem; }
+  header {
+    grid-template-areas: "logo lasBandurrias" "logo cabañaPatagonica" "navBar navBar";
+    width: 100%;
+    font-size: 2.5rem;
+    letter-spacing: .1em;
+    text-align: end; }
+  .logo {
+    height: 9rem; }
+  .nombreCabanas {
+    font-size: 1.5rem; }
+  .cabanaPatagonica {
+    font-size: 1rem; }
+  ul li {
+    font-size: 0.9rem;
+    margin: .5rem;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .myBtnNav:hover {
+    background-color: #9fa47b;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black; }
+  .presentacion h1 {
+    font-size: 2rem;
+    text-align: center; }
+  .presentacion h2 {
+    font-size: 1rem; }
+  .footer {
+    background-color: #9fa47b;
+    border-top: 0.1rem solid #e5dfcf;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .footer h3 {
+    text-align: center; }
+  .footer p {
+    text-align: center; }
+  .adress {
+    width: 100%; }
+  .contacto {
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
-    }
-}
+    margin-bottom: 2rem; } }
+
+body {
+  margin: 0; }

@@ -1,0 +1,30 @@
+.placaFondo {
+    background-color: opacify(rgba(#e5dfcf80, 0.5), 0.2); 
+    margin: 3%;
+    padding: 1rem;
+}
+.presentacion {
+    background-color: rgb(241,233,210);
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion h1 {
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-size: 4rem;
+    letter-spacing: 0.3em;
+    margin: 1rem 0 0;
+}
+
+.presentacion h2 {
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-size: 2rem;
+    letter-spacing: 0.3em;
+}
+.fotoCabana {
+    width: 50rem;
+    margin: 2rem;
+}

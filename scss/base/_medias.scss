@@ -1,0 +1,77 @@
+@media screen and (max-width: 576px) {
+    body {
+        width: 100vw;
+    }
+    .fotoCabana {
+        width: 10rem;
+        margin: 1rem;
+    }
+    header {
+        grid-template-areas:
+            "logo lasBandurrias"
+            "logo cabañaPatagonica"
+            "navBar navBar";
+        width: 100%;
+        font-size: 2.5rem;
+        letter-spacing: .1em;
+        text-align: end;
+    }
+    .logo {
+        height: 9rem;
+    }
+    .nombreCabanas {
+        font-size: 1.5rem;
+    }
+    .cabanaPatagonica {
+        font-size: 1rem;
+    }
+    ul li{
+        font-size: 0.9rem;
+        margin: .5rem;
+        padding: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .myBtnNav:hover {
+        background-color: rgb(159,164,123);
+        border-radius: 25px;
+        text-decoration: none;
+        color: black;}
+
+    .presentacion h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .presentacion h2 {
+        font-size: 1rem;
+
+    }
+
+    .footer {
+        background-color: rgb(159,164,123);
+        border-top: 0.1rem solid rgb(229,223,207);
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+
+    .footer h3 {
+        text-align: center;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+    .adress {
+        width: 100%;
+    }
+    .contacto{ 
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    }
+}

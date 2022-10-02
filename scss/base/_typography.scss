@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&family=IM+Fell+Double+Pica+SC&family=Poppins:wght@300&family=Quicksand&display=swap');
+@font-face{
+    font-family: "Bohemian Typewriter";
+    src: url(../assets/fonts/Bohemian_Typewriter.ttf);
+}
+
+%pageTitle{
+    font-family: "Bohemian Typewriter";
+    color: black;
+    font-size: 4.5rem;}
+%bodyFont{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+%navBarFont {
+    font-family: 'IM Fell DW Pica SC', serif;
+    color: black;
+}
+
+//font-family: 'IM Fell DW Pica SC', serif;*/

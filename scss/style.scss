@@ -1,0 +1,14 @@
+@import "./base/extends";
+@import "./base/typography";
+@import "./base/listas";
+@import "./components/header";
+@import "./components/main";
+@import "./components/footer";
+@import "./components/turismo";
+@import "./base/medias";
+
+body {
+    margin: 0;
+    @extend %paralax;
+    @extend %bodyFont;
+}

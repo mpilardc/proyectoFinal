@@ -1,0 +1,85 @@
+header {
+    background-color: rgb(159,164,123);
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+        "logo  lasBandurrias"
+        "logo  cabañaPatagonica"
+        "navBar  navBar";
+    grid-template-columns: 20% 80%;
+    border-bottom: 0.1rem solid rgb(229,223,207);
+    .nombreCabanas {
+            @extend %pageTitle;
+            letter-spacing: 0.2em;
+            text-align: end;
+            grid-area: lasBandurrias;
+            margin: 1rem 0 0 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+    .cabanaPatagonica {
+        @extend %pageTitle;
+        font-size: 1.5rem;
+        letter-spacing: 0.3em;
+        text-align: end;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        grid-area: cabañaPatagonica;
+        margin: 0 1rem;
+        }
+    .logo {
+        grid-area: logo;
+        height: 13rem;
+        padding: 1rem;
+        }
+    .myNavBar {
+        @extend %navBarFont;
+        grid-area: navBar;
+        display: flex;
+        align-items: baseline;
+        align-content: space-between;
+        justify-content: center;
+        }
+        nav ul {
+            display: flex;
+            flex-direction:row;
+            margin: 0;
+            padding: 0;
+            align-items: stretch;
+        }
+        ul {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style-type: none;
+            text-align: center;
+        }
+            li {
+            font-size: 1.5rem;
+            padding: .5rem 1em ;
+            margin: .5rem 3rem;
+        }
+                a {
+            text-decoration: none;
+            color: black;
+        }
+        nav a:hover{
+            text-decoration: none;
+            color: black;
+        }
+        .myBtnNav {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+                &:hover {
+                    border-radius: 25px;
+                    transition-property: background;
+                    transition-duration: 500ms;
+                    background-color: rgb(241,233,210);
+                    text-decoration: none;
+                    color: black;}}
+    }
