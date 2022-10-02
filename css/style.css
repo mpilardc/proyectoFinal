@@ -41,6 +41,9 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start; }
+    @media screen and (max-width: 576px) {
+      header .nombreCabanas {
+        font-size: 1.5rem; } }
   header .cabanaPatagonica {
     font-size: 1.5rem;
     letter-spacing: 0.3em;

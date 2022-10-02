@@ -18,6 +18,9 @@ header {
             display: flex;
             justify-content: flex-end;
             align-items: flex-start;
+                @media screen and (max-width: 576px) {
+                    font-size: 1.5rem;
+                }
         }
     .cabanaPatagonica {
         @extend %pageTitle;
