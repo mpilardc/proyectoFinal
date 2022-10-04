@@ -1,13 +1,9 @@
-header {
+.headerIndex {
     background-color: rgb(159,164,123);
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-areas:
-        "logo  lasBandurrias"
-        "logo  cabañaPatagonica"
-        "logo  navBar";
-    grid-template-columns: 20% 80%;
+    display: flex;
+    justify-content: space-around;
     border-bottom: 0.1rem solid rgb(229,223,207);
     .nombreCabanas {
             @extend %pageTitle;
